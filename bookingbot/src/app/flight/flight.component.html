@@ -1,0 +1,78 @@
+<form>
+	<div class="col-md-8 col-md-offset-2">
+		<!-- ROW 1 -->
+		<div class="form-row">
+			<div class="form-check form-check-inline">
+				<label class="form-check-label"> 
+					<input class="form-check-input" type="radio" name="travelType" 
+							id="ttreturn" value="return" checked="checked"> Return
+				</label>
+				<label class="form-check-label"> 
+					<input class="form-check-input" type="radio" name="travelType" 
+							id="ttoneway" value="oneway"> One Way
+				</label>
+				<label class="form-check-label"> 
+					<input class="form-check-input" type="radio" name="travelType" 
+							id="ttmulticity" value="multicity"> Multi City
+				</label>
+			</div>
+		</div>
+		<!-- ROW 2 -->
+		<div class="form-row">
+			<label class="col-md-3 form-check-label">Origin</label>
+			<label class="col-md-3 form-check-label">Destination</label>
+			<label class="col-md-3 form-check-label">Departure Date</label>
+			<label class="col-md-3 form-check-label">Return Date</label>
+		</div>
+		<!-- ROW 3 -->
+		<div class="form-row">
+			<input type="text" class="col-md-3 form-control" id="origin" required>
+			<input type="text" class="col-md-3 form-control" id="destination" required>
+			<input type="date" class="col-md-3 form-control" id="depDate" required/>
+			<input type="date" class="col-md-3 form-control" id="rtrnDate" required/>
+		</div>
+		<!-- ROW 4 -->
+		<div class="form-row">
+			<div class="form-check form-check-inline">
+				<label class="form-check-label"> 
+					<input class="form-check-input" type="radio" name="travelClass" 
+							id="tteconomy" value="economy" checked="checked"> Economy
+				</label>
+				<label class="form-check-label"> 
+					<input class="form-check-input" type="radio" name="travelClass" 
+							id="ttbusiness" value="business"> Business
+				</label>
+				<label class="form-check-label"> 
+					<input class="form-check-input" type="radio" name="travelClass" 
+							id="ttfirstclass" value="firstclass"> First Class
+				</label>
+			</div>
+		</div>
+		<!-- ROW 5 -->
+		<div class="form-row">
+			<label class="col-md-4 form-check-label">Direct Flights Only</label>
+			<div class="form-check form-check-inline col-md-1">
+				<input class="form-check-input" type="checkbox" id="directFlightOnly"
+					value="directFlightOnly">
+			</div>
+			<label class="col-md-4 form-check-label">Refundable</label>
+			<div class="form-check form-check-inline col-md-1">
+				<input class="form-check-input" type="checkbox" id="refundable"
+					value="refundable"> 
+			</div>
+		</div>
+		<!-- ROW 6 -->
+		<div class="form-row">
+			<label class="col-md-2 form-check-label">Adults</label>
+			<input type="number" class="col-md-2 form-control" id="adults" value="adults" min="1" max="9">
+			<label class="col-md-2 form-check-label">Children</label>
+			<input type="number" class="col-md-2 form-control" id="children" value="children" min="0" max="9">
+			<label class="col-md-2 form-check-label">Infants</label>
+			<input type="number" class="col-md-2 form-control" id="infants" value="infants" min="0" max="9">
+		</div>
+		<!-- ROW 3 -->
+		<div class="form-row">
+			<button type="submit" class="btn btn-primary">Search</button>
+		</div>
+	</div>
+</form>
